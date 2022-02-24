@@ -1,0 +1,30 @@
+﻿@model TypographicBlogger.Models.Analytics
+
+<form class="row bg-white box-shadow" method="post" action="https://localhost:7030/Analytics">
+    <div class="col-12 my-3">
+        <h1 class="text-dark">Create a category</h1>
+    </div>
+    
+    <div class="col-6 my-3">
+        <label asp-for="@Model.Year"></label>
+        <input class="form-control" asp-for="@Model.Year"/>
+        <span asp-validation-for="@Model.Year"></span>
+    </div>
+
+    <div class="col-6 my-3">
+        <label asp-for="@Model.CreatedBy"></label>
+        <input class="form-control" asp-for="@Model.CreatedBy"/>
+        <span asp-validation-for="@Model.CreatedBy"></span>
+    </div>
+
+    <div class="col-3 my-3">
+        <button class="btn btn-primary w-100">Save Data</button>
+    </div>
+</form>
+
+@section Scripts
+{
+    <script src="https://cdn.tiny.cloud/1/eiokn8243tp4rwj1xxvrb8q0oo10ks7fhk6luplifj0qsnpq/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    
+    <partial name="_ValidationScriptsPartial" />
+}

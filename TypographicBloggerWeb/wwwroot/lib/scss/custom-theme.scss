@@ -1,0 +1,99 @@
+﻿
+$primary: #4e30ff;
+$secondary: #de4cff;
+
+$card-border-width: 0;
+
+$primary-gradient: linear-gradient(90deg, $secondary 0%, $primary 100%);
+
+$input-group-addon-bg: #fff;
+
+$input-focus-box-shadow: none;
+
+$spacer: 1rem;
+
+.text-primary-gradient {
+    background-image: $primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-primary-gradient {
+    background: $primary-gradient;
+}
+
+@import "./navigation/_navigation.scss"; 
+@import "./accordion/_accordion.scss"; 
+@import "../bootstrap/scss/bootstrap.scss";
+
+
+
+.admin-nav__left {
+    width: 300px;
+    height: 100vh;
+    z-index: 50;
+}
+
+#main-content {
+    margin-left: 300px;
+    background-color: rgba($primary, 0.09);
+}
+
+
+.admin-nav__left nav {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column !important;
+}
+
+.is-expanded,
+#main-content,
+#horizontal-nav {
+    transition: all .4s ease-in-out;
+}
+
+.top-nav__info {
+    margin-left: 300px;
+   
+}
+
+.collapsed-nav__scale-comps {
+    margin-left: 80px !important;
+}
+
+.collapsed-vertical-nav{
+    width: 80px;
+    left: 0;
+}
+
+
+.nav-icon {
+    font-size: calc(1rem + 8px);
+}
+
+#main-content__identity{
+    width: 100%;
+    overflow: hidden;
+}
+
+.identity__img {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        width: 65%;
+    }
+}
+
+.transition-fade {
+    transition: 0.4s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    transform: translateY(150px);
+    opacity: 0;
+}

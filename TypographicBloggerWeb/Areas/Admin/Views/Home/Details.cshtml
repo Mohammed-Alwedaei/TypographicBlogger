@@ -1,0 +1,16 @@
+﻿@model Post
+
+<h1>Post Preview:</h1>
+
+<section class="bg-white p-3 rounded">
+    <h2>@Model.Title</h2>
+
+    <p>Date Created: @Model.DateCreated.ToShortDateString()</p>
+
+    @Html.Raw(@Model.Content)
+
+    <div class="btn-group">
+        <a class="btn btn-dark" asp-action="Upsert" asp-route-slug="@Model.Slug">Edit</a>
+        <a class="btn btn-danger" asp-action="Delete" asp-route-slug="@Model.Slug">Delete</a>
+    </div>
+</section>

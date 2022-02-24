@@ -1,0 +1,17 @@
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.csproj.AssemblyReference.cache
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.AssemblyInfoInputs.cache
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.AssemblyInfo.cs
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.csproj.CoreCompileInputs.cache
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\TypographicBlogger.DataAccess.deps.json
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\TypographicBlogger.DataAccess.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\ref\TypographicBlogger.DataAccess.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\TypographicBlogger.DataAccess.pdb
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\TypographicBlogger.Models.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\TypographicBlogger.Models.pdb
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.csproj.CopyComplete
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\ref\TypographicBlogger.DataAccess.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.pdb
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\bin\Debug\net6.0\TypographicBlogger.DataAccess.runtimeconfig.json
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\TypographicBlogger.DataAccess\obj\Debug\net6.0\TypographicBlogger.DataAccess.genruntimeconfig.cache

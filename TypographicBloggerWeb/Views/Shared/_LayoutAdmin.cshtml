@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - TypographicBloggerWeb</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="~/css/typographicblogger.min.css" />
+    <link rel="stylesheet" href="~/TypographicBloggerWeb.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header id="vertical-nav" class="admin-nav__left bg-white border-end position-fixed is-expanded ">
+        <nav class="navbar navbar-light mb-3 p-1">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <a class="navbar-brand" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                        <i class="bi bi-bounding-box text-primary-gradient display-5"></i>
+                        &nbsp;
+                        <span class="toggle-nav-item__visibility">Typographic Blog</span>
+                    </a>
+                </div>
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                            <i class="bi bi-house-door nav-icon text-primary"></i>
+                            &nbsp;
+                            <span class="toggle-nav-item__visibility">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Privacy">
+                            <i class="bi bi-shield-check nav-icon text-primary"></i>
+                            &nbsp;
+                            <span class="toggle-nav-item__visibility">Privacy</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="accordion accordion-vertical-nav__link" id="accordionExample">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="bi bi-gear nav-icon text-primary"></i>
+                                        &nbsp;
+                                        <span class="toggle-nav-item__visibility">Manage Blog</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <ul class="accordion-body">
+                                        <li class="list-group-item border-0 py-0">
+                                            <h5>Blog Posts</h5>
+                                        </li>
+
+                                        <li class="list-group-item border-0 py-0">
+                                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Create">
+                                                <i class="bi bi-file-earmark-plus nav-icon text-primary"></i>
+                                                &nbsp;
+                                                <span class="toggle-nav-item__visibility">Create</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item border-0 py-0">
+                                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Upsert">
+                                                <i class="bi bi-pencil-square nav-icon text-primary"></i>
+                                                &nbsp;
+                                                <span class="toggle-nav-item__visibility">Update/Delete</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item border-0 py-0">
+                                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Posts">
+                                                <i class="bi bi-file-post nav-icon text-primary"></i>
+                                                &nbsp;
+                                                <span class="toggle-nav-item__visibility">Posts</span>
+                                            </a>
+                                        </li>
+
+                                        <hr class="bg-secondary" />
+
+                                        <li class="list-group-item border-0 py-0">
+                                            <h5>Category</h5>
+                                        </li>
+
+                                        <li class="list-group-item border-0 py-0">
+                                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Create">
+                                                <i class="bi bi-file-earmark-plus nav-icon text-primary"></i>
+                                                &nbsp;
+                                                <span class="toggle-nav-item__visibility">Create</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item border-0 py-0">
+                                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Category" asp-action="Upsert">
+                                                <i class="bi bi-tags nav-icon text-primary"></i>
+                                                &nbsp;
+                                                <span class="toggle-nav-item__visibility">Category</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="horizontal-nav" class="navbar navbar-nav bg-white top-nav__info navbar-light box-shadow border-bottom position-sticky top-0">
+        <div class="d-flex flex-row justify-content-between align-items-center w-100 pe-5">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <button id="toggle-vertical-nav" class="btn text-primary shadow-none me-4">
+                    <i class="bi bi-list display-6"></i>
+                </button>
+
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0" id="inputGroup-sizing-sm"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex flex-row align-items-center">
+                <p id="dateTime" class="mb-0 me-5"></p>
+
+                <div>
+                    <button class="btn btn-outline-primary">
+                        <i class="bi bi-person-fill"></i> Login
+                    </button>
+
+                    <button class="btn btn-outline-secondary">
+                        <i class="bi bi-lock"></i> Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main-content" class="p-5 vh-100">
+        <main id="swup" role="main" class="container-fluid transition-fade">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer position-relative text-muted">
+        <div class="container">
+            &copy; @DateTime.Now.Year - TypographicBloggerWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/swup/swup.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/eiokn8243tp4rwj1xxvrb8q0oo10ks7fhk6luplifj0qsnpq/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="~/lib/gsap/gsap.min.js"></script>
+    <script src="~/lib/Chart.js/chart.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/js/transitions.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", false)
+</body>
+</html>

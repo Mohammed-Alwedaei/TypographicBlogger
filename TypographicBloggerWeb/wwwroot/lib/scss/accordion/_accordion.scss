@@ -1,0 +1,21 @@
+﻿$accordion-button-active-bg: #fff;
+$accordion-button-focus-box-shadow: none;
+
+$accordion-padding-x: 0;
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    border-bottom: 0;
+}
+
+.accordion-vertical-nav__link {
+
+    .accordion-body{
+        padding: 0;
+    }
+
+
+    ul {
+        padding-left: $spacer;
+    }
+}

@@ -1,0 +1,51 @@
+﻿@model TypographicBlogger.ViewModels.BlogPostViewModel
+
+<form class="row bg-white box-shadow" method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="col-12 my-3">
+        <h1 class="text-secondary">Create a new post</h1>
+    </div>
+
+    <div class="col-6 my-3">
+        <label asp-for="Post.Title"></label>
+        <input class="form-control" asp-for="Post.Title" placeholder="" />
+        <span asp-validation-for="Post.Title"></span>
+    </div>
+
+    <div class="col-6 my-3">
+        <label asp-for="Post.Slug"></label>
+        <input class="form-control" asp-for="Post.Slug"/>
+        <span asp-validation-for="Post.Slug"></span>
+    </div>
+    
+    <div class="col-12 my-3">
+        <label asp-for="Post.Description"></label>
+        <input class="form-control" asp-for="Post.Description"/>
+        <span asp-validation-for="Post.Description"></span>
+    </div>
+    
+    <div class="col-12 my-3">
+        <label asp-for="Post.ImageUrl"></label>
+        <input class="form-control file-form-control" type="file" asp-for="Post.ImageUrl" name="formFile" />
+    </div>
+
+    <div class="col-12 my-3">
+        <textarea id="blogContentArea" asp-for="Post.Content"></textarea>
+        <span asp-validation-for="Post.Content"></span>
+    </div>
+    
+    <div class="col-12 my-3">
+        <label asp-for="Post.CategoryId"></label>
+        <select class="form-select" asp-for="Post.CategoryId" asp-items="@Model.Categories"></select>
+        <span asp-validation-for="Post.CategoryId"></span>
+    </div>
+
+    <div class="col-3 my-3">
+        <button class="btn btn-primary w-100">Save Data</button>
+    </div>
+</form>
+
+@section Scripts
+{
+
+    <partial name="_ValidationScriptsPartial" />
+}

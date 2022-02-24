@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Post>
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Namespace"] = "Home";
+}
+
+<section>
+    <div class="text-start">
+        <h1 class="display-4">Welcome</h1>
+        <p class="lead">Recent posts:</p>
+        
+        <div class="row">
+            <div class="col-5">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var blogPost in Model)
+            {
+                <a class="col-lg-4 col-md-6 col-12 g-4 box-shadow text-decoration-none" asp-action="Details" asp-route-slug="@blogPost.Slug">
+                    <div class="card p-3 rounded-3">
+                        <div class="card-img-top">
+                            <img class="img-fluid rounded-3" src="@blogPost.ImageUrl" />
+                        </div>
+
+                        <div class="card-body text-dark">
+                            <h3 class="text-primary text-start mb-3">@blogPost.Title</h3>
+                            <p class="card-text">@Html.Raw(blogPost.Description)</p>
+                            <div class="d-flex justify-content-between">
+                                <p>@blogPost.Category.Name</p>
+                                <p>@blogPost.DateCreated</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+    
+    <br/>
+
+    <table id="datatbl" class="table table-striped" style="width: 100%;">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Slug</th>
+            <th>Date Created</th>
+        </tr>
+        </thead>
+    </table>
+</section>
+
+@section Scripts
+{
+    <script src="~/lib/datatables/datatables.min.js"></script>
+    <script src="~/lib/datatables/datatables.bootstrap.min.js"></script>
+    <script src="~/js/posts.js"></script>
+}

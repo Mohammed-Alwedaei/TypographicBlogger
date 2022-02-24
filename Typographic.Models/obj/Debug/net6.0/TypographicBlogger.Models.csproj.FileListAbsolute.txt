@@ -1,0 +1,14 @@
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.csproj.AssemblyReference.cache
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.GeneratedMSBuildEditorConfig.editorconfig
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.AssemblyInfoInputs.cache
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.AssemblyInfo.cs
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.csproj.CoreCompileInputs.cache
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\bin\Debug\net6.0\TypographicBlogger.Models.deps.json
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\bin\Debug\net6.0\TypographicBlogger.Models.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\bin\Debug\net6.0\ref\TypographicBlogger.Models.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\bin\Debug\net6.0\TypographicBlogger.Models.pdb
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\ref\TypographicBlogger.Models.dll
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.pdb
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\bin\Debug\net6.0\TypographicBlogger.Models.runtimeconfig.json
+A:\Web_Development\20222\Typographic_Blogger\TypographicBlogger\Typographic.Models\obj\Debug\net6.0\TypographicBlogger.Models.genruntimeconfig.cache
